@@ -33,8 +33,6 @@ router.post('/register', function(req, res, next) {
     console.log(user);
   });
 
-  req.flash('success_msg','Register successfully.');
-
   res.redirect('/users/login');
 });
 
