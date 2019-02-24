@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title><%= title %> | Home</title>
+    <link rel='stylesheet' href='/stylesheets/bootstrap.css'/>
+    <link rel='stylesheet' href='/stylesheets/signin.css'/>
+    <link rel='stylesheet' href='/stylesheets/style.css'/>
+
+    <style>
+        .bd-placeholder-img {
+            font-size: 1.125rem;
+            text-anchor: middle;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+        }
+
+        @media (min-width: 768px) {
+            .bd-placeholder-img-lg {
+                font-size: 3.5rem;
+            }
+        }
+    </style>
+
+</head>
+<body class="text-center">
+<div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column" style="margin-top:-80px">
+    <header class="masthead mb-auto">
+        <div class="inner">
+
+            <nav class="nav nav-masthead justify-content-center">
+                <a class="nav-link" href="/">Home</a>
+                <a class="nav-link active" href="/users/register">Register</a>
+                <a class="nav-link" href="/users/login">Login</a>
+            </nav>
+        </div>
+    </header>
+
+    <form class="form-signin" method="post" action="/users/register">
+
+        <h5 class="h5 mb-3 font-weight-normal" style="margin-top:30px">Your ID</h5>
+        <label for="inputID" class="sr-only">ID</label>
+        <input type="text" name="id" class="form-control" placeholder="ID" required autofocus>
+
+        <br>
+        <h5 class="h5 mb-3 font-weight-normal">Name</h5>
+        <label for="inputName" class="sr-only">Name</label>
+        <input type="text" name="name" class="form-control" placeholder="Name" required>
+
+        <br>
+        <h5 class="h5 mb-3 font-weight-normal">Email</h5>
+        <label for="inputEmail" class="sr-only">Email address</label>
+        <input type="email" name="emailaddress" class="form-control" placeholder="Email address" required>
+
+        <br>
+        <h5 class="h5 mb-3 font-weight-normal">Password</h5>
+        <label for="inputPassword" class="sr-only">Password</label>
+        <input type="password" name="password" class="form-control" placeholder="Password" required>
+
+        <button class="btn btn-lg btn-primary btn-block" type="submit">Register</button>
+        <p class="mt-5 mb-3 text-muted">&copy; 2017-2019</p>
+    </form>
+</div>
+</body>
+</html>

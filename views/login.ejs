@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title><%= title %> | Login</title>
+    <link rel='stylesheet' href='/stylesheets/bootstrap.css'/>
+    <link rel='stylesheet' href='/stylesheets/signin.css'/>
+    <link rel='stylesheet' href='/stylesheets/style.css'/>
+
+    <style>
+        .bd-placeholder-img {
+            font-size: 1.125rem;
+            text-anchor: middle;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+        }
+
+        @media (min-width: 768px) {
+            .bd-placeholder-img-lg {
+                font-size: 3.5rem;
+            }
+        }
+    </style>
+
+</head>
+<body class="text-center">
+<div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column" style="margin-top:-80px">
+    <header class="masthead mb-auto">
+        <div class="inner">
+
+            <nav class="nav nav-masthead justify-content-center">
+                <a class="nav-link" href="/">Home</a>
+                <a class="nav-link" href="/users/register">Register</a>
+                <a class="nav-link active" href="/users/login">Login</a>
+            </nav>
+        </div>
+    </header>
+
+    <form class="form-signin">
+        <img class="mb-4" src="http://localhost:3000/images/login_logo_200px.png" alt="" width="200" height="131">
+        <h1 class="h3 mb-3 font-weight-normal">Please sign in</h1>
+        <label for="inputEmail" class="sr-only">Email address</label>
+        <input type="email" id="inputEmail" class="form-control" placeholder="Email address" required autofocus>
+        <label for="inputPassword" class="sr-only">Password</label>
+        <input type="password" id="inputPassword" class="form-control" placeholder="Password" required>
+        <div class="checkbox mb-3">
+            <label>
+                <input type="checkbox" value="remember-me"> Remember me
+            </label>
+        </div>
+        <button class="btn btn-lg btn-primary btn-block" type="submit">Sign in</button>
+        <p class="mt-5 mb-3 text-muted">&copy; 2017-2019</p>
+    </form>
+    </div>
+</body>
+</html>
